@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal JS</title>
+</head>
+<body>
+  <p class="studentname"></p>
+  <p class="message"></p>
+
+  <script>
+    const pname = document.querySelector('.studentname');
+    const pmessage = document.querySelector('.message');
+
+    const name = prompt('Enter your name: ');
+    pname.textContent = `Hi, I'm ${name}`;
+    pmessage.textContent = 'Welcome to basic JS for Web Dev!';
+  </script>
+</body>
+</html>
